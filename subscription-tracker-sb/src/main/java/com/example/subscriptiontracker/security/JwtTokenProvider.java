@@ -5,9 +5,10 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
-
+@Component
 public class JwtTokenProvider {
     private String jwtSecret;
     private int jwtExpirationInMs;
